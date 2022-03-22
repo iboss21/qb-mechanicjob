@@ -3,7 +3,7 @@ Config = {}
 Config.AttachedVehicle = nil
 
 Config.AuthorizedIds = {
-    "insertcitizenidhere",
+    "",
 }
 
 Config.MaxStatusValues = {
@@ -27,67 +27,77 @@ Config.ValuesLabels = {
 }
 
 Config.RepairCost = {
-    ["body"] = "plastic",
-    ["radiator"] = "plastic",
-    ["axle"] = "steel",
-    ["brakes"] = "iron",
-    ["clutch"] = "aluminum",
-    ["fuel"] = "plastic",
+    ["body"] = "rubber",
+    ["radiator"] = "metalscrap",
+    ["axle"] = "metalscrap",
+    ["brakes"] = "metalscrap",
+    ["clutch"] = "metalscrap",
+    ["fuel"] = "glass",
 }
 
 Config.RepairCostAmount = {
     ["engine"] = {
         item = "metalscrap",
-        costs = 2,
+        costs = 10,
     },
     ["body"] = {
-        item = "plastic",
-        costs = 3,
+        item = "rubber",
+        costs = 10,
     },
     ["radiator"] = {
-        item = "steel",
-        costs = 5,
+        item = "metalscrap",
+        costs = 10,
     },
     ["axle"] = {
-        item = "aluminum",
-        costs = 7,
+        item = "metalscrap",
+        costs = 10,
     },
     ["brakes"] = {
-        item = "copper",
-        costs = 5,
+        item = "metalscrap",
+        costs = 10,
     },
     ["clutch"] = {
-        item = "copper",
-        costs = 6,
+        item = "metalscrap",
+        costs = 10,
     },
     ["fuel"] = {
-        item = "plastic",
-        costs = 5,
+        item = "glass",
+        costs = 10,
     },
 }
 
 Config.Businesses = {
     "Auto Repair",
+
 }
+
 
 Config.Plates = {
     [1] = {
-        coords = vector4(-340.95, -128.24, 39, 160.46),
+        coords = vector4(125.82, -3034.89, 7.04, 264.72), --vector4(-324.03, -132.3, 38.65, 68.85),
+        AttachedVehicle = nil,
+    },
+    [2] = {
+        coords = vector4(125.07, -3041.34, 7.04, 262.15),
+        AttachedVehicle = nil,
+    },
+    [3] = {
+        coords = vector4(124.6, -3023.16, 7.04, 260.28),
         AttachedVehicle = nil,
     },
 }
 
 Config.Locations = {
-    ["exit"] = vector3(-339.04, -135.53, 39),
-    ["stash"] = vector3(-323.19, -129.86, 39),
-    ["duty"] = vector3(-344.35, -123.39, 39), 
-    ["vehicle"] = vector4(-370.51, -107.88, 38.35, 72.56), 
+    ["exit"] = vector3(164.03, -3025.23, 6.5),
+    ["stash"] = vector3(128.62, -3013.64, 7.04),
+    ["duty"] = vector3(153.08, -3014.33, 7.04), 
+    ["vehicle"] = vector4(143.63, -2998.54, 7.03, 352.21), 
 }
 
 Config.Vehicles = {
     ["flatbed"] = "Flatbed",
     ["towtruck"] = "Towtruck",
-    ["minivan"] = "Minivan (Rental Car)",
+    ["minivan"] = "Minivan (Leen Auto)",
     ["blista"] = "Blista",
 }
 
